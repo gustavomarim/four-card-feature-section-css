@@ -1,0 +1,39 @@
+body,
+h1,
+p {
+    margin : 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size  : 1rem;
+}
+
+img {
+    display  : block;
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* ------- RESET ------- */
+
+.container {
+    display        : flex;
+    max-width      : 1440px;
+    margin         : 0 auto;
+    align-items    : center;
+    justify-content: center;
+    flex-wrap      : wrap;
+}
+
+.box {
+    width: 300px;
+}
+
+.column-box {
+    flex-direction: column;
+}
