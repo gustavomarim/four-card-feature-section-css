@@ -173,4 +173,14 @@ footer a:hover {
         line-height   : 1;
         padding-bottom: 20px;
     }
+
+    .header-paragraph {
+        font-size: 1em;
+    }
+}
+
+@media(max-width:430px) {
+    footer h1 {
+        max-width: 20ch;
+    }
 }
