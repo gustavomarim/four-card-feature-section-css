@@ -14,8 +14,8 @@
 body,
 h1,
 p {
-    margin : 0;
-    padding: 0;
+    margin : 0px;
+    padding: 0px;
 }
 
 body {
@@ -36,11 +36,11 @@ img {
 
 .header {
     text-align    : center;
-    padding-top   : 80px;
+    padding-top   : 40px;
     padding-bottom: 60px;
 }
 
-.header .title {
+.title {
     color      : var(--Very-Dark-Blue);
     font-size  : 3rem;
     font-weight: 200;
@@ -51,9 +51,10 @@ img {
     font-size    : 3rem;
     font-weight  : 600;
     margin-bottom: 20px;
+    line-height  : 1;
 }
 
-.info {
+.header-paragraph {
     color      : var(--Grayish-Blue);
     font-size  : 1.25rem;
     font-weight: 400;
@@ -67,19 +68,40 @@ img {
     align-items    : center;
     justify-content: center;
     flex-wrap      : wrap;
+    padding-bottom : 60px;
 }
 
 .box {
     width        : 350px;
-    margin       : 15px;
+    margin       : 20px;
     padding      : 20px;
     border-radius: 8px;
+    min-width    : 350px;
     background   : #fff;
+    box-shadow   : 0px 2px 25px 1px var(--Grayish-Blue);
+}
+
+/* Classes - border-top */
+.red {
+    border-top: 5px solid var(--Red);
+}
+
+.cyan {
+    border-top: 5px solid var(--Cyan);
+}
+
+.orange {
+    border-top: 5px solid var(--Orange);
+}
+
+.blue {
+    border-top: 5px solid var(--Blue);
 }
 
 .img {
     display        : flex;
     justify-content: right;
+    padding        : 15px;
 }
 
 .box-title {
@@ -91,7 +113,7 @@ img {
     color         : var(--Grayish-Blue);
     font-size     : 0.90rem;
     line-height   : 1.8;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 .column-box {
@@ -99,5 +121,56 @@ img {
 }
 
 .margin-bottom {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-title {
+    font-size  : 1.5rem;
+    font-weight: 200;
+    text-align : center;
+    padding    : 20px;
+    color      : var(--Very-Dark-Blue);
+}
+
+footer a {
+    font-weight    : 600;
+    text-decoration: none;
+    color          : var(--Very-Dark-Blue);
+}
+
+footer a:hover {
+    color: var(--Blue);
+}
+
+@media(max-width:1170px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+@media(max-width:700px) {
+    .header {
+        padding-left : 10px;
+        padding-right: 10px;
+    }
+
+    .title .title-bold {
+        font-size: 2em;
+    }
+}
+
+@media(max-width:600px) {
+    .header {
+        text-align    : left;
+        padding-bottom: 30px;
+    }
+
+    .title .title-bold {
+        font-size: 1.5em;
+    }
+
+    .title {
+        line-height   : 1;
+        padding-bottom: 20px;
+    }
 }
